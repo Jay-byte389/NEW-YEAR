@@ -1,0 +1,67 @@
+/* Full page centering */
+.countdown-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* change if needed */
+  }
+  
+  /* Wrapper max width */
+  .countdown-wrapper {
+    max-width: 900px;
+  }
+  
+  /* Description styling */
+  .description {
+    font-size: 1.1rem;
+  }
+  
+  /* Countdown boxes */
+  .countdown-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual box styling */
+  .time-box {
+    background: #ffc107;
+    padding: 20px 25px;
+    border-radius: 12px;
+    min-width: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .time-box h3 {
+    font-size: 2rem;
+    margin: 0 0 5px;
+  }
+  
+  .time-box span {
+    font-size: 0.9rem;
+    text-transform: capitalize;
+  }
+  
+  /* Hover effect */
+  .time-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Responsive for mobile */
+  @media (max-width: 576px) {
+    .countdown-boxes {
+      gap: 15px;
+    }
+  
+    .time-box {
+      min-width: 80px;
+      padding: 15px 20px;
+    }
+  }
+  
